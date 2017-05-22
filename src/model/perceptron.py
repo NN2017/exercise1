@@ -107,7 +107,7 @@ class Perceptron(Classifier):
 
         """
 
-        self.weight + error * self.learningRate*np.array(input)
+        self.weight += error * self.learningRate*np.array(input)
 
     def fire(self, input):
         """Fire the output of the perceptron corresponding to the input """
